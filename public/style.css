@@ -1,0 +1,886 @@
+
+.foot1{
+
+float: left;
+margin: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width:25%;
+    height:100px;
+}
+
+.foot2{
+
+float: left;
+margin: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0);
+    transition: 0.3s;
+    width: 25%;
+    width:25%;
+    height:100px;
+}
+.foot3{
+    float: left;
+    margin: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width:25%;
+    height:100px;
+    
+}
+
+.tf:hover{
+    opacity:0;
+
+}
+.foot1:hover{
+    box-shadow: 12px 8px 16px 0 rgba(9, 2, 2, 0.2);
+    transition: 1.3s;
+        background: url("image/telephone-call-icon-isolated-on-white-background-vector-22651790.jpg") no-repeat;
+        background-size: 100px;
+        background-position: center;    
+}
+.foot2:hover{
+    box-shadow: 12px 8px 16px 0 rgba(202, 19, 86, 0.2);
+    transition: 1.3s;
+    background: url("image/whatsapp-1.webp") no-repeat;
+    background-size: 100px;
+    background-position: center;   
+}
+.foot3:hover{
+    box-shadow: 12px 8px 16px 0 rgba(202, 19, 86, 0.2);
+    transition: 1.3s;
+    background: url("image/telephone-call-icon-isolated-on-white-background-vector-22651790.jpg") no-repeat;
+        background-size: 100px;
+        background-position: center;    
+}
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    padding: 2px 16px;
+    margin: 15px;
+}
+.first_div{
+    height: 700px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("./image/first_div_img.jpeg");
+}
+@media screen and (max-width:600px) {
+    .footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; 
+        padding: 2px 16px;
+        margin-top: 55px;
+    }   
+   .foot1,
+   .foot2,
+   .foot3{
+       width: 100%;
+   }
+}
+@font-face {
+    font-family: "valentine";
+    src: url(font/ValentineSoul.ttf);
+
+}
+.txt2{
+    font-family:"valentine";
+    font-size: 177px;
+    
+    text-align: center;
+    margin: 0%;
+} 
+
+.txt1,.txt3{
+    font-family: "poppins";
+    font-weight:lighter;
+    font-size: 38px;
+}
+
+.ptxt3{
+    font-family: "poppins";
+    font-weight:lighter;
+    font-size: 38px;
+    margin-top:auto ;
+    margin: auto; 
+    text-align: center;
+}
+
+.ptxt4{
+    font-family: "poppins";
+    font-weight:lighter;
+    font-size: 38px;
+    margin: auto; 
+    text-align: center;
+}
+
+.sec_div{
+    height: 700px;
+
+}
+
+
+.imgtot{
+    animation: fadein 3s ;
+
+}
+
+
+
+.pic1{
+    
+    height:442.86px;
+    width : 305.58px;
+    margin-left: 39%;
+    margin-top: 80px;
+    transform: rotate(-2.59deg);
+    z-index: 1;
+    content:url(./image/wed1.jpg);
+
+}
+
+.pic2{
+    
+    height:291.16px;
+    width : 199.83px;
+    margin-left: 39%;
+    position: relative;
+    left: 198px;
+    bottom: 220px;
+    transform: rotate(1.37deg);
+    z-index: 2;
+    content:url(./image/wed2.jpg);
+
+}
+
+.wordlft1,.wordlft2,.wordlft3{
+    height:250px;
+    width : 250px;
+    position: absolute;
+    float: left;
+}
+
+.wordlft1{
+    left: 13%; margin-top: 8%; 
+
+}
+.wordlft2{
+    left: 18%; margin-top: 23%;
+}
+.wordlft3{
+    left: 28%; margin-top: 37%; 
+}
+
+.wordlft1{
+    height: 250px;
+    width: 250px;
+    position: absolute;
+}
+
+
+.wordrit{
+    height:250px;
+    width : 500px;
+    float: right;
+    margin: auto;
+    
+
+}
+
+.forimg{
+    color: red;
+    height: 50px;
+    width: 50px;
+
+}
+
+.spic{
+    height: 100px;
+    width: 100px;
+    padding-left: 32%;
+
+}
+
+@keyframes fadein {
+    
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 100;
+    }
+    
+}
+
+  
+.carousel-cell {
+    width: 70%;
+    height: 200px;
+    /* flex-box, center image in cell */
+    display: -webkit-box;
+    display: -webkit-flex;
+    display:         flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+            justify-content: center;
+    -webkit-align-items: center;
+            align-items: center;
+  }
+  
+  .carousel-cell img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    /* dim unselected */
+    opacity: 0.7;
+    -webkit-transform: scale(0.85);
+            transform: scale(0.85);
+    -webkit-filter: blur(5px);
+            filter: blur(5px);
+    -webkit-transition: opacity 0.3s, -webkit-transform 0.3s, transform 0.3s, -webkit-filter 0.3s, filter 0.3s;
+            transition: opacity 0.3s, transform 0.3s, filter 0.3s;
+  }
+  
+  /* brighten selected image */
+  .carousel-cell.is-selected img {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-filter: none;
+            filter: none;
+  }
+  
+  @media screen and ( min-width: 768px ) {
+    .carousel-cell {
+      height: 400px;
+    }
+  }
+  
+  @media screen and ( min-width: 960px ) {
+    .carousel-cell {
+      width: 60%;
+    }
+  }
+  
+  /* buttons, no circle */
+  .flickity-prev-next-button {
+    width: 60px;
+    height: 60px;
+    background: transparent;
+    opacity: 0.6;
+  }
+  .flickity-prev-next-button:hover {
+    background: transparent;
+    opacity: 1;
+  }
+  /* arrow color */
+  .flickity-prev-next-button .arrow {
+    fill: white;
+  }
+  .flickity-prev-next-button.no-svg {
+    color: white;
+  }
+  /* closer to edge */
+  .flickity-prev-next-button.previous { left: 0; }
+  .flickity-prev-next-button.next { right: 0; }
+  /* hide disabled button */
+  .flickity-prev-next-button:disabled {
+    display: none;
+  }
+  
+.stxt1{
+    font-family: valentine;
+    font-size: 128px;
+    margin-top: 9%;
+    text-align: center;
+    
+    
+}
+
+.simg{
+    float: left;
+    height: 93%;
+    width: 510px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.div1{
+    height:100px;
+    display: inline-block;
+}
+.stxt2{
+    font-family: poppins;
+    font-size: 40px;
+    
+}
+.stxt7{
+    font-family: poppins;
+    font-size: 40px;
+    margin-left: 20px;
+    
+}
+
+.stxt{
+    margin-top: 3%;
+}
+
+
+.div2{
+    display: inline-block;
+    margin-left:10%;
+}
+.stxt3,.stxt4{
+    font-family: valentine;
+}
+.stxt3{
+    font-size:25px;
+    margin: 0;
+    text-align: center;
+    
+}
+.stxt4{
+    font-size: 128px;
+     margin: 0;
+}
+.div{
+    display: flex;
+    
+    margin-top: 50px;
+    margin-left: 15px;
+    padding-left: 35px;
+    
+}
+
+.div4{
+    margin-left: 9%;
+}
+.stxt5,.stxt6{
+    font-family: poppins;
+    margin: 0;
+    font-size: 20px;
+}
+.stxt1{
+    animation: 3s infinite alternate slidein;
+ 
+}
+@keyframes slidein{
+    0%   {color: rgb(199, 15, 45);}
+  25%  {color:  rgb(21, 6, 140);}
+  50%  {color:   rgb(166, 176, 12);}
+  100% {color: rgb(184, 16, 193);}
+}
+
+
+
+
+
+.fadeInLeft{
+    -webkit-animation: fadeInLeft 1.2s both;
+    -moz-animation: fadeInLeft 1.2s both;
+    -o-animation: fadeInLeft 1.2s both;
+    animation: fadeInLeft 1.2s both;
+}
+
+@-webkit-keyframes fadeInLeft {
+0%{
+    opacity: 0;
+    -webkit-transform: translate(-50px);
+}
+100%{
+    opacity: 1;
+    -webkit-transform: translate(0);
+}
+}
+
+@-moz-keyframes fadeInLeft {
+    0%{
+        opacity: 0;
+        -moz-transform: translate(-50px);
+    }
+    100%{
+        opacity: 1;
+        -moz-transform: translate(0);
+    }
+}
+
+@-o-keyframes fadeInLeft {
+    0%{
+        opacity: 0;
+        -o-transform: translate(-50px);
+    }
+    100%{
+        opacity: 1;
+        -o-transform: translate(0);
+    }
+}
+
+@keyframes fadeInLeft{
+    0%{
+        opacity: 0;
+        transform: translate(-50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+.fadeInRight{
+    -webkit-animation: fadeInRight 1.2s both;
+    -moz-animation: fadeInRight 1.2s both;
+    -o-animation: fadeInRight 1.2s both;
+    animation: fadeInRight 1.2s both;
+}
+@keyframes fadeInRight{
+    0%{
+        opacity: 0;
+        transform: translate(50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+.slideinleft {
+	margin-left:-300px;
+	max-width:100%;
+}
+
+
+.leaves img{
+    width: 70px;
+    animation: leaf 7s linear infinite;
+
+}
+
+.leaves{
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    top: -70px;;
+
+}
+
+@keyframes leaf {
+
+    0%{
+        transform: translateY(0);
+        opacity: 0;
+
+    }
+
+    25%{
+
+        opacity: 1;
+
+    }
+
+    50%{
+        
+        opacity: 1;
+
+    }
+
+    100%{
+        transform: translateY(80vh);
+        opacity: 0;
+
+    }
+    
+}
+
+.leaves img:nth-child(1){
+    animation-delay: 2s;
+}
+
+.leaves img:nth-child(2){
+    animation-delay: 6s;
+}
+
+.leaves img:nth-child(3){
+    animation-delay: 4.5s;
+}
+
+.leaves img:nth-child(4){
+    animation-delay: 7s;
+}
+
+.leaves img:nth-child(5){
+    animation-delay: 3s;
+}
+
+/*....................... fift duv...............*/
+.fiv_div{
+    height: 300px;
+    width: 100%;
+    
+}
+.ftxt1{
+    font-family: "poppins";
+    font-weight:lighter;
+    font-size: 40px;
+    text-align: center;
+
+}
+.fbtn{
+    position: absolute;
+    top: 69%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 10%;
+    width: 25%;
+    border-radius:30px ;
+
+}
+.fimg1{
+    opacity: 70%;
+    transition: 1s;
+    height:300px;
+    width:400px;
+
+}
+.fimg1:hover{
+    opacity: 100%;
+}
+
+/*......................six div....................*/
+.six_div{
+    height:350px;
+    width:100%;
+    /* display: flex;
+    flex-direction: row;
+    justify-content: space-around; */
+}
+
+.sdiv1{
+    display: flex;
+    justify-content: center;
+     justify-content: space-around;
+      margin-bottom: 10%;
+       margin-top: 5%;
+       
+}
+.sxtxt1{
+    font-weight:lighter;
+  font-size: 40px;
+  text-align: center;
+}
+.sdiv2,.sdiv3,.sdiv4{
+    flex: 0 0 0;
+}
+.sximg1{
+    border-radius: 50%;
+     height: 250px;
+}
+.sximg2{
+    border-radius: 50%;
+     height: 250px; 
+    width:170px;
+}
+
+
+.ptxt5{
+    font-family: "poppins";
+    font-weight:lighter;
+    font-size: 40px;
+    
+
+}
+
+.d4txt{
+
+    position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); font-size:30px;font-weight: bold; color: aliceblue;
+}
+
+
+@media screen and (max-width: 600px) {
+    
+   
+
+    .txt1,.txt3{
+        font-family: "poppins";
+        font-weight:lighter;
+        font-size: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .txt2{
+        font-family:"valentine";
+        font-size: 40px;
+        text-align: center;
+        margin: 0%;
+    } 
+    
+    .first_div{
+        width: auto;
+        height: 750px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url("./image/first_div_img.jpeg");
+    }
+
+    .sec_div{
+        width: 100%;
+        height: 260px;
+    
+    }
+
+    .simg{
+        float: left;
+        height: 100%;
+        width: 100px;
+        margin-left: 2px;
+        margin-right: 3px;
+    }
+    
+    .stxt1{
+        font-family: valentine;
+        font-size: 40px;
+        position: relative;
+        margin-top: 30px;
+        left: 20px;
+        text-align: center;
+    }
+    
+    .line{
+        display: none;
+    }
+
+    .stxt2{
+        font-family: poppins;
+        font-size: 20px;
+        
+    }
+
+    .stxt3,.stxt4{
+        font-family: valentine;
+        
+    }
+
+    .div{
+        display: flex;
+        
+        margin-top: 50px;
+        margin-left: 15px;
+        padding-left: 35px;
+        
+    }
+
+    .stxt7{
+        
+        font-size: 20px;
+        
+        
+    }
+    
+    .div4{
+        margin-left: 0%;
+    }
+
+    .stxt{
+        margin-top: 0%;
+    }
+
+    .stxt6{
+        font-family: poppins;
+        margin: 0;
+        font-size: 11px;
+    }
+
+    .stxt5{
+        font-family: poppins;
+        text-align: right;
+        font-size: 11px;
+
+    }
+
+    .bord{
+        padding-top: 210px;
+        
+        border-color: red;
+
+    }
+    
+    .sdiv1{
+        position:absolute;
+      
+       
+        
+        
+    }
+    .sdiv3{
+        margin-left: 10%;
+        margin-right: 10%;
+        
+    }
+    .sxtxt1{
+    font-weight:lighter;
+    font-size: 20px;
+    margin-left: auto;
+        
+    }
+    
+    
+    
+  
+    
+    .sximg1{
+        border-radius: 50%;
+     height: 150px;
+    }
+    .sximg2{
+        border-radius: 50%;
+     height: 150px; 
+    width:100px;
+
+    }
+    .fimg1{
+        opacity: 70%;
+        transition: 1s;
+        height:200px;
+        width:170px;
+        margin: 5%;
+    
+    }
+    .pic1{
+    
+        height:0px;
+        width : 0px;
+        margin-left: 0%;
+        margin-right: 0%;
+        
+        content:url(./image/wed1.jpg);
+        display: none;
+    }
+    .pic2{
+    
+        height:202.86px;
+        width : 120.83px;   
+        margin-left: 0;
+        position: relative;
+        transform: rotate(0deg);
+        
+        content:url(./image/wed2.jpg);
+    
+    }
+    .wordlft{
+        height:150px;
+        width : 150px;
+        position: absolute;
+        float: left;
+        
+       
+        
+    }
+    
+    .d4txt{
+
+        position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%); font-size:20px;font-weight: bold; color: aliceblue;
+    }
+    
+    .four_div{
+        height : 600px;
+    }
+    
+    .fiv_div{
+        height: 300px;
+        width: 100%;
+        
+    }
+
+    .ptxt3{
+        font-family: "poppins";
+        font-weight:lighter;
+        font-size: 17px;
+        margin-top:auto ;
+        margin: auto; 
+        text-align: center;
+    }
+    
+
+    .ptxt5{
+        font-family: "poppins";
+        font-weight:lighter;
+        font-size: 10px;
+        display: none;
+
+    }
+    
+    .spic{
+        height: 20px;
+        width: 20px;
+        padding-left: 40px;
+    
+    }
+
+    .ptxt4{
+        font-family: "poppins";
+        font-weight: lighter;
+        font-size: 11px;
+        margin: auto; 
+        text-align: center;
+    }
+
+    .imgtot{
+        animation: fadein 3s ;
+        height: 300px;
+        
+        
+    }
+    
+    .wordlft1,.wordlft2,.wordlft3{
+        height:50px;
+        width : 100px;
+        position: absolute;
+        float: left;
+    }
+
+    .wordlft1{
+        left: 50px; margin-top: 50px; 
+    
+    }
+    .wordlft2{
+        left: 18%; margin-top: 140px;
+    }
+    .wordlft3{
+        left: 28%; margin-top: 230px; 
+    }
+
+    
+    .leaves img{
+        width: 30px;
+        animation: leaf 7s linear infinite;
+    
+    }
+    .six_div{
+
+        flex-direction: column;
+    }
+    .footer{
+        margin-right: 15%;
+        margin-top: auto;
+    }
+    .txt3{
+        font-size: 15px;
+    }
+
+
+
+}
+
+
